@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>박규원</title>
+</head>
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+}
+</style>
+<body>
+	<h2>자기소개서</h2>
+	<form action="" id="accounting" name="accounting"
+		enctype="multipart/from-data">
+		<table border="1" width="800" height="400">
+			<tr>
+				<th>이름</th>
+				<td><input type="text" id="name" name="name" size="30"
+					value="박규원"></td>
+				<th>아이디</th>
+				<td><input type="text" id="id" name="id" size="40"
+					value="lwd33021"></td>
+
+			</tr>
+
+			<tr>
+				<th width="100">성별</th>
+				<td width="150">남<input type="Radio" id="checkbox" name="Radio"
+					checked>여<input type="Radio" id="checkbox" name="Radio"></td>
+				<th>비밀번호</th>
+				<td><input type="password" maxlength="20"
+					placeholder="특수문자를 포함한 최대 20자" size="40" value="sdsdkfkfkj23"></td>
+			</tr>
+
+			<tr>
+				<th>생일</th>
+				<td><input type="date" id="date" name="date" value="1996-06-11"></td>
+				<th>주소</th>
+				<td><input type="text" id="adress" name="adress"
+					placeholder="00시 00구 00동" maxlength="20" size="40"
+					value="서울시 마포구 노고산동"></td>
+			</tr>
+
+			<tr>
+				<th>국적</th>
+				<td><select id="" name="select">
+						<optgroup label="아시아">
+							<option value="korea" selected>한국</option>
+							<option value="china">중국</option>
+							<option value="japan">일본</option>
+						</optgroup>
+
+						<optgroup label="유럽">
+							<option value="denmark">덴마크</option>
+							<option value="spain">스페인</option>
+							<option value="france">프랑스</option>
+						</optgroup>
+				</select></td>
+				<th>번호</th>
+				<td><input type="number" id="number" name="number" max="11"
+					placeholder="-를 제외하고 입력해주세요" value=01024206561></td>
+
+			</tr>
+
+			<tr>
+				<th>모바일 마케팅수신동의</th>
+				<td>동의<input type="Radio" id="agree" name="agreement">미동의<input
+					type="Radio" id="disagree" name="agreement" checked></td>
+				<th>비밀번호문제</th>
+				<td><input type="text" id="question" name="question" size="40"
+					value="졸업한 초등학교는?"></td>
+			</tr>
+
+			<tr>
+				<th>추천인</th>
+				<td><input type="text" id="recomandation" name="recomandation"
+					size="30" value="이성현"></td>
+				<th>비밀번호답</th>
+				<td><input type="text" id="answer" name="answer" size="40"
+					value="내동초등학교"></td>
+			</tr>
+
+			<tr>
+				<th>사진</th>
+				<td><input type="file" id="picture" name="picture"
+					accept=".jpg"></td>
+				<th>sns</th>
+				<td><select id="sns" name="sns">
+						<option value="facebook">페이스북</option>
+						<option value="instargram" selected>인스타그램</option>
+						<option value="kakaostory">카카오스토리</option>
+						<option value="twitter">트위터</option></td>
+				</select>
+			</tr>
+
+			<tr>
+				<th>홈페이지</th>
+				<td><input type="URL" id="url" name="name"
+					placeholad="https://" size="30" value="https://instagram/gyu"></td>
+				<th>직업</th>
+				<td><input type="text" id="profesion" name="profesion"
+					size="40" value="학생"></td>
+			</tr>
+		</table>
+		<br> <br>
+		<table width="800" height="200">
+			<tr>
+				<th colspan="4">프로젝트 참여</th>
+			</tr>
+
+			<tr>
+				<th>번호</th>
+				<th>프로젝트명</th>
+				<th>참여기간</th>
+				<th>역할</th>
+			</tr>
+
+			<tr>
+				<th rowspan="4">1</th>
+				<td rowspan="4"><input type="text" id="projectname"
+					name="projectname" value="JAVA 웹페이지 구축"></td>
+				<td rowspan="4">from<input type="date" id="startdate"
+					name="startdate" value="2019-06-30"> to<input type="date"
+					id="enddate" name="enddate" value="2020-05-30"></td>
+				<td rowspan="2" value="빅데이터 구축"><input type="text" id="role"
+					name="role"></td>
+			</tr>
+
+			<tr>
+			</tr>
+
+			<tr>
+				<th>발주사</th>
+			</tr>
+			<tr>
+				<td value="HYUNDAI ROBOTICS"><input type="text" id="orderer"
+					name="orderer"></td>
+			</tr>
+		</table>
+		<br> <br>
+		<table width="800" height="100">
+			<tr>
+				<th>취미</th>
+				<td colspan="3"><input type="checkbox" name="hobby" id="hobby1"
+					checked>축구 <input type="checkbox" name="hobby" id="hobby2">술마시기
+					<input type="checkbox" name="hobby" id="hobby3" checked>음악감상
+					<input type="checkbox" name="hobby" id="hobby4">영화감상 <input
+					type="checkbox" name="hobby" id="hobby5">수영</td>
+			</tr>
+
+			<tr>
+				<th>결혼여부/결혼기념일</th>
+				<td colspan="3">유<input type="radio" id="marriage"
+					name="marriage"> 무<input type="radio" id="marriage2"
+					name="marriage" checked>
+				</td>
+
+			</tr>
+
+		</table>
+		<br> <br>
+		<table width="800" height="100">
+			<tr>
+				<th>자녀유무</th>
+				<th>좋아하는 색깔</th>
+				<th>본인 소개</th>
+				<th>개인정보 유효기간</th>
+			</tr>
+
+			<tr>
+				<td>유<input type="radio" id="child" name="child"> 무<input
+					type="radio" id="child2" name="child" checked>
+
+				</td>
+				<td><input type="color" id="color" name="color" "value=""#00ff00""></td>
+				<td><input type="text" id="selfintroduction"
+					name="selfintroduction" style="width: 300px; height: 200px;"
+					value="안녕하세요! 제 이름은 박규원입니다. 나이는 27살이고 대학에서는 언어학&스페인어를 전공했습니다. 저의 취미는 음악감상과 축구 입니다. 현재는 서울에서 자취하고 있으며 곧 신림으로 이사갈 예정입니다. 잘 부탁드립니다!"></td>
+				<td>
+
+					<ul>
+						<li><input type="radio" id="personalinformation1"
+							name="personalinformation">1년</li>
+						<li><input type="radio" id="personalinformation3"
+							name="personalinformation" checked>3년</li>
+						<li><input type="radio" id="personalinformation5"
+							name="personalinformation">5년</li>
+						<li><input type="radio" id="persoanlinformation10"
+							name="personalinformation">10년</li>
+					</ul>
+
+				</td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+
+		<input type="button" id="submit" name="submit" value="제출하기">
+	</form>
+
+
+
+
+
+</body>
+</html>
