@@ -74,8 +74,14 @@ th, td {
 				<td>동의<input type="Radio" id="agree" name="agreement">미동의<input
 					type="Radio" id="disagree" name="agreement" checked></td>
 				<th>비밀번호문제</th>
-				<td><input type="text" id="question" name="question" size="40"
-					value="졸업한 초등학교는?"></td>
+				<td><select id="" name="select">
+						<option value="pet">당신이 키우는 애완동물 이름은?</option>
+						<option value="school" selected>당신이 졸업한 학교는?</option>
+						<option value="father">당신의 아버지의 이름은?</option>
+						<option value="memoriable">가장 기억에 남는 장소는?</option>
+						<option value="county">당신이 처음 여행한 나라는?</option>
+
+					</select></td>
 			</tr>
 
 			<tr>
@@ -96,8 +102,9 @@ th, td {
 						<option value="facebook">페이스북</option>
 						<option value="instargram" selected>인스타그램</option>
 						<option value="kakaostory">카카오스토리</option>
-						<option value="twitter">트위터</option></td>
-				</select>
+						<option value="twitter">트위터</option></select> 주소 <input type="text" name = "etc" id="etc" size="15" value="instagram/gg"></td>
+				
+				
 			</tr>
 
 			<tr>
@@ -110,7 +117,7 @@ th, td {
 			</tr>
 		</table>
 		<br> <br>
-		<table width="800" height="200">
+		<table width="900" height="200">
 			<tr>
 				<th colspan="4">프로젝트 참여</th>
 			</tr>
@@ -126,11 +133,11 @@ th, td {
 				<th rowspan="4">1</th>
 				<td rowspan="4"><input type="text" id="projectname"
 					name="projectname" value="JAVA 웹페이지 구축"></td>
-				<td rowspan="4">from<input type="date" id="startdate"
-					name="startdate" value="2019-06-30"> to<input type="date"
-					id="enddate" name="enddate" value="2020-05-30"></td>
-				<td rowspan="2" value="빅데이터 구축"><input type="text" id="role"
-					name="role"></td>
+				<td rowspan="4">from<input type="month" id="startdate"
+					name="startdate" value="2019-06"> to<input type="month"
+					id="enddate" name="enddate" value="2020-05"></td>
+				<td rowspan="2"><input type="text" id="role" name="role"
+					value="빅데이터 구축"></td>
 			</tr>
 
 			<tr>
@@ -140,8 +147,8 @@ th, td {
 				<th>발주사</th>
 			</tr>
 			<tr>
-				<td value="HYUNDAI ROBOTICS"><input type="text" id="orderer"
-					name="orderer"></td>
+				<td><input type="text" id="orderer" name="orderer"
+					value="HYUNDAI ROBOTICS"></td>
 			</tr>
 		</table>
 		<br> <br>
@@ -179,34 +186,29 @@ th, td {
 					type="radio" id="child2" name="child" checked>
 
 				</td>
-				<td><input type="color" id="color" name="color" "value=""#00ff00""></td>
-				<td><input type="text" id="selfintroduction"
-					name="selfintroduction" style="width: 300px; height: 200px;"
-					value="안녕하세요! 제 이름은 박규원입니다. 나이는 27살이고 대학에서는 언어학&스페인어를 전공했습니다. 저의 취미는 음악감상과 축구 입니다. 현재는 서울에서 자취하고 있으며 곧 신림으로 이사갈 예정입니다. 잘 부탁드립니다!"></td>
-				<td>
-
-					<ul>
-						<li><input type="radio" id="personalinformation1"
-							name="personalinformation">1년</li>
-						<li><input type="radio" id="personalinformation3"
-							name="personalinformation" checked>3년</li>
-						<li><input type="radio" id="personalinformation5"
-							name="personalinformation">5년</li>
-						<li><input type="radio" id="persoanlinformation10"
-							name="personalinformation">10년</li>
-					</ul>
-
-				</td>
-			</tr>
-		</table>
-		<br>
-		<hr>
-
-		<input type="button" id="submit" name="submit" value="제출하기">
-	</form>
+				<td><input type="color" id="color" name="color" value="#00ff00"></td>
+				<td><p><textarea cols="50" rows="10">
+안녕하세요! 제 이름은 박규원입니다. 나이는 27살이고 대학에서는 언어학&스페인어를 전공했습니다. 저의 취미는 음악감상과 축구 입니다. 현재는 서울에서 자취하고 있으며 곧 신림으로 이사갈 예정입니다.잘 부탁드립니다!</textarea></p></td>
+			<td>
+			
+			<ul>
+			<li><input type="radio" id="personalinformation1" name="personalinformation">1년</li>
+			<li><input type="radio" id="personalinformation3" name="personalinformation" checked>3년</li> 
+			<li><input type="radio" id="personalinformation5" name="personalinformation">5년</li>
+			<li><input type="radio" id="persoanlinformation10" name="personalinformation">10년</li>
+			</ul>
+			
+			</td>
+		</tr>
+	</table>
+	<br><hr>
+	
+	<input type="button" id="submit" name="submit" value="제출하기">
+	</form> 
 
 
-
+<hr><br>
+<a href ="./memberlist.html">목록</a><br>
 
 
 </body>

@@ -65,7 +65,14 @@ th, td {
 			<th>모바일 마케팅수신동의</th>
 			<td>동의<input type= "Radio" id="agree" name="agreement">미동의<input type= "Radio" id="disagree" name="agreement"></td>
 			<th>비밀번호문제</th>
-			<td><input type= "text" id="question" name="question" size="40"></td>
+			<td><select id="" name="select">
+						<option value="pet">당신이 키우는 애완동물 이름은?</option>
+						<option value="school">당신이 졸업한 학교는?</option>
+						<option value="father">당신의 아버지의 이름은?</option>
+						<option value="memoriable">가장 기억에 남는 장소는?</option>
+						<option value="county">당신이 처음 여행한 나라는?</option>
+
+					</select></td>
 		</tr>
 
 		<tr>
@@ -84,8 +91,8 @@ th, td {
 					<option value="facebook">페이스북</option>
 					<option value="instargram">인스타그램</option>
 					<option value="kakaostory">카카오스토리</option>
-					<option value="twitter">트위터</option></td>
-				</select>
+					<option value="twitter">트위터</option></select>주소<input type="text" name = "etc" id="etc" size="15" value=""></td>
+				
 		</tr>
 
 		<tr>
@@ -97,7 +104,7 @@ th, td {
 	</table>
 	<br>
 	<br>
-	<table width="800" height="200">
+	<table width="900" height="200">
 		<tr>
 			<th colspan="4">프로젝트 참여</th>
 		</tr>
@@ -112,19 +119,28 @@ th, td {
 		<tr>
 			<th rowspan="4">1</th>
 			<td rowspan="4"><input type="text" id="projectname" name="projectname"></td>
-			<td rowspan="4">from<input type="date" id="startdate" name="startdate"> 
-							to<input type="date" id="enddate" name="enddate"></td>
+			<td rowspan="4">from<input type="month" id="startdate" name="startdate"> 
+							to<input type="month" id="enddate" name="enddate"></td>
 			<td rowspan="2"><input type="text" id="role" name="role"></td>
+			
 		</tr>
 
 		<tr>
+		
 		</tr>
 
 		<tr>
+		
 			<th>발주사</th>
 		</tr>
 		<tr>
 			<td><input type="text" id="orderer" name="orderer"></td>
+		</tr>
+		<tr>
+		</tr>
+		<tr>		
+		</tr>
+		<tr>
 		</tr>
 	</table>
 	<br>
@@ -169,7 +185,7 @@ th, td {
 			
 			</td>
 			<td><input type="color" id="color" name="color" ></td>
-			<td><input type="text" id="selfintroduction" name="selfintroduction" style="width:300px;height:200px;"></td>
+			<td><textarea cols="50" rows="10"></textarea></td>
 			<td>
 			
 			<ul>
@@ -186,8 +202,8 @@ th, td {
 	
 	<input type="button" id="submit" name="submit" value="제출하기">
 	</form> 
-
-
+<hr><br>
+<a href ="./memberlist.html">목록</a>
 
 
 

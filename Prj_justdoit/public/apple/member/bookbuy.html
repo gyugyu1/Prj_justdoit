@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="uTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+}
+</style>
+<body>
+	<h2>배송지정보</h2>
+	<form action="" method="post" id="info" name="info" enctype="multipart/from-data">
+		<table border="1" width="400" height="100">
+			<tr>
+				<th>배송지</th>
+				<td colspan="3"><input type="radio" id="destination"
+					name="destination">최근 배송지 <input type="radio"
+					id="destination2" name="destination">집 <input type="radio"
+					id="destination3" name="destination">자취방 <input
+					type="radio" id="destination4" name="destination">부모님집
+			</td>
+			</tr>
+			<tr>
+				<th>이름</th>
+				<td colspan="3"><input type="text" id="name" name="name"></td>
+			
+			</tr>
+		
+			<tr>
+				<th rowspan="2">배송지</th>
+				<td colspan="3" rowspan="2"><input type="text" id="name"
+					name="name" size="10" placeholder="우편번호 앞자리">-<input
+					type="text" id="name" name="name" size="10" placeholder="우편번호 뒷자리">
+				<br><input type="text" id="adress" name="adress" size="40"
+					placeholder="상세주소를 입력해주세요"> </td>
+			</tr>
+		<tr>
+		</tr>
+		<tr>
+			<th>휴대폰</th>
+			<td><input type="tel" id="phone" name=" phone">
+		</td>
+		</tr>
+	</table>
+
+    <h2>주문자정보</h2>
+	<table border="1" width="400" height="100">
+		<tr>
+			<th>이름</th>
+			<td colspan="3"><input type="text" id="name" name="name"></td>
+			
+		</tr>
+		<tr>
+			<th>휴대폰</th>
+			<td><input type="tel" id="phone" name=" phone"></td>
+		</tr>
+			<th>이메일주소</th>
+			<td><input type="email" id="email" name="email"></td>
+	</table>
+	
+	
+
+			</form>
+</body>
+</html>
