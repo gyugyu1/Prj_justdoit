@@ -10,7 +10,15 @@ table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
+ul{
+	margin-top:1px;
+	padding:3px;
+}
+li {
+	float :left;
+	margin-top:5px;
+	padding:3px;
+}
 th, td {
 	padding: 10px;
 }
@@ -81,7 +89,7 @@ th, td {
 						<option value="memoriable">가장 기억에 남는 장소는?</option>
 						<option value="county">당신이 처음 여행한 나라는?</option>
 
-					</select></td>
+				</select></td>
 			</tr>
 
 			<tr>
@@ -102,9 +110,11 @@ th, td {
 						<option value="facebook">페이스북</option>
 						<option value="instargram" selected>인스타그램</option>
 						<option value="kakaostory">카카오스토리</option>
-						<option value="twitter">트위터</option></select> 주소 <input type="text" name = "etc" id="etc" size="15" value="instagram/gg"></td>
-				
-				
+						<option value="twitter">트위터</option>
+				</select> 주소 <input type="text" name="etc" id="etc" size="15"
+					value="instagram/gg"></td>
+
+
 			</tr>
 
 			<tr>
@@ -152,15 +162,7 @@ th, td {
 			</tr>
 		</table>
 		<br> <br>
-		<table width="800" height="100">
-			<tr>
-				<th>취미</th>
-				<td colspan="3"><input type="checkbox" name="hobby" id="hobby1"
-					checked>축구 <input type="checkbox" name="hobby" id="hobby2">술마시기
-					<input type="checkbox" name="hobby" id="hobby3" checked>음악감상
-					<input type="checkbox" name="hobby" id="hobby4">영화감상 <input
-					type="checkbox" name="hobby" id="hobby5">수영</td>
-			</tr>
+		<table width="900" height="100">
 
 			<tr>
 				<th>결혼여부/결혼기념일</th>
@@ -171,45 +173,67 @@ th, td {
 
 			</tr>
 
-		</table>
-		<br> <br>
-		<table width="800" height="100">
 			<tr>
 				<th>자녀유무</th>
+				<td colspan="3">유<input type="radio" id="child" name="child">
+					무<input type="radio" id="child2" name="child" checked>
+				</td>
+			</tr>
+
+		</table>
+		<br> <br>
+		<table width="900" height="100">
+			<tr>
 				<th>좋아하는 색깔</th>
 				<th>본인 소개</th>
-				<th>개인정보 유효기간</th>
+				<th>취미</th>
 			</tr>
 
 			<tr>
-				<td>유<input type="radio" id="child" name="child"> 무<input
-					type="radio" id="child2" name="child" checked>
+				<td><input type="color" id="color" name="color" value="#fff440"></td>
+				<td><textarea cols="50" rows="10">안녕하세요! 제 이름은 박규원입니다. 나이는 27살이고 대학에서는 언어학&스페인어를 전공했습니다. 저의 취미는 음악감상과 축구 입니다. 현재는 서울에서 자취하고 있으며 곧 신림으로 이사갈 예정입니다.잘 부탁드립니다!</textarea></td>
+				<td>
+
+					<ul style="list-style-type: none">
+						<li><input type="checkbox" id="hobby1" name="hobby" checked>음주</li>
+						<li><input type="checkbox" id="hobby2" name="hobby"checked>축구</li>
+						<li><input type="checkbox" id="hobby3" name="hobby">낚시</li>
+						<li><input type="checkbox" id="hobby4" name="hobby">음악감상</li>
+						<li><input type="checkbox" id="hobby5" name="hobby"checked>요리</li>
+						<li><input type="checkbox" id="hobby6" name="hobby"checked>영화감상</li>
+						<li><input type="checkbox" id="hobby7" name="hobby">농구</li>
+						<li><input type="checkbox" id="hobby7" name="hobby">수영</li>
+						<li><input type="checkbox" id="hobby7" name="hobby">목공</li>
+						<li><input type="checkbox" id="hobby7" name="hobby">뜨개질</li>
+						<li><input type="checkbox" id="hobby7" name="hobby">악기연주</li>
+
+					</ul>
+
 
 				</td>
-				<td><input type="color" id="color" name="color" value="#00ff00"></td>
-				<td><p><textarea cols="50" rows="10">
-안녕하세요! 제 이름은 박규원입니다. 나이는 27살이고 대학에서는 언어학&스페인어를 전공했습니다. 저의 취미는 음악감상과 축구 입니다. 현재는 서울에서 자취하고 있으며 곧 신림으로 이사갈 예정입니다.잘 부탁드립니다!</textarea></p></td>
-			<td>
-			
-			<ul>
-			<li><input type="radio" id="personalinformation1" name="personalinformation">1년</li>
-			<li><input type="radio" id="personalinformation3" name="personalinformation" checked>3년</li> 
-			<li><input type="radio" id="personalinformation5" name="personalinformation">5년</li>
-			<li><input type="radio" id="persoanlinformation10" name="personalinformation">10년</li>
-			</ul>
-			
-			</td>
-		</tr>
-	</table>
-	<br><hr>
-	
-	<input type="button" id="submit" name="submit" value="제출하기">
-	</form> 
+			</tr>
+		</table>
+		<br>
+		<table width="900" height="100">
+			<tr>
+				<th>개인정보 유효기간</th>
+				<td><input type="radio" id="personalinformation1"
+					name="personalinformation">1년 <input type="radio"
+					id="personalinformation3" name="personalinformation" checked>3년 <input
+					type="radio" id="personalinformation5" name="personalinformation">5년
+					<input type="radio" id="persoanlinformation10"
+					name="personalinformation">10년</td>
+			</tr>
 
 
-<hr><br>
-<a href ="./memberlist.html" style="font-weight:bold; font-size:large;">목록</a><br>
+		</table>
+		<br>
+		<hr>
 
-
+		<input type="button" id="submit" name="submit" value="제출하기">
+	</form>
+	<hr>
+	<br>
+	<a href="./memberlist.html" style="font-weight: bold; font-size: large">목록</a>
 </body>
 </html>

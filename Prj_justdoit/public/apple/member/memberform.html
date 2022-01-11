@@ -10,7 +10,15 @@ table, th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
-
+ul{
+	margin-top:1px;
+	padding:3px;
+}
+li {
+	float :left;
+	margin-top:5px;
+	padding:3px;
+}
 th, td {
 	padding: 10px;
 }
@@ -18,7 +26,7 @@ th, td {
 <body>
 <h2>자기소개서</h2>
 	<form action="" id="accounting" name="accounting" enctype="multipart/from-data">
-	<table border="1" width="800" height="400">
+	<table border="1" width="900" height="400">
 		<tr>
 			<th>이름</th>
 			<td><input type="text" id="name" name="name" size="30"></td>
@@ -145,18 +153,7 @@ th, td {
 	</table>
 	<br>
 	<br>
-	<table width="800" height="100">
-		<tr>
-			<th>취미</th>
-			<td colspan="3">
-			
-			<input type="checkbox" name="hobby" id="hobby1">축구
-			<input type="checkbox" name="hobby" id="hobby2">술마시기
-			<input type="checkbox" name="hobby" id="hobby3">음악감상
-			<input type="checkbox" name="hobby" id="hobby4">영화감상
-			<input type="checkbox" name="hobby" id="hobby5">수영
-			</td>
-		</tr>
+	<table width="900" height="100">
 
 		<tr>
 			<th>결혼여부/결혼기념일</th>
@@ -166,37 +163,63 @@ th, td {
 			</td>
 
 		</tr>
+		
+		<tr>
+			<th>자녀유무</th>
+			<td colspan="3">
+				유<input type="radio" id="child" name="child" >
+				무<input type="radio" id="child2" name="child" checked>
+			</td>
+		</tr>
 
 	</table>
 	<br>
 	<br>
-	<table width="800" height="100">
+	<table width="900" height="100">
 		<tr>
-			<th>자녀유무</th>
 			<th>좋아하는 색깔</th>
 			<th>본인 소개</th>
-			<th>개인정보 유효기간</th>
+			<th>취미</th>
 		</tr>
 
 		<tr>
-			<td>
-			유<input type="radio" id="child" name="child" >
-			무<input type="radio" id="child2" name="child" checked>
-			
-			</td>
 			<td><input type="color" id="color" name="color" ></td>
 			<td><textarea cols="50" rows="10"></textarea></td>
 			<td>
 			
-			<ul>
-			<li><input type="radio" id="personalinformation1" name="personalinformation">1년</li>
-			<li><input type="radio" id="personalinformation3" name="personalinformation">3년</li> 
-			<li><input type="radio" id="personalinformation5" name="personalinformation">5년</li>
-			<li><input type="radio" id="persoanlinformation10" name="personalinformation">10년</li>
+			<ul style="list-style-type:none">
+				<li><input type="checkbox" id="hobby1" name="hobby">음주</li>
+				<li><input type="checkbox" id="hobby2" name="hobby">축구</li> 
+				<li><input type="checkbox" id="hobby3" name="hobby">낚시</li>
+				<li><input type="checkbox" id="hobby4" name="hobby">음악감상</li>
+				<li><input type="checkbox" id="hobby5" name="hobby">요리</li>
+				<li><input type="checkbox" id="hobby6" name="hobby">영화감상</li>
+				<li><input type="checkbox" id="hobby7" name="hobby">농구</li>
+				<li><input type="checkbox" id="hobby7" name="hobby">수영</li>
+				<li><input type="checkbox" id="hobby7" name="hobby">목공</li>
+				<li><input type="checkbox" id="hobby7" name="hobby">뜨개질</li>
+				<li><input type="checkbox" id="hobby7" name="hobby">악기연주</li>
+			
 			</ul>
+			
 			
 			</td>
 		</tr>
+	</table>
+	<br>
+	<table width="900" height="100">
+		<tr>
+			<th>개인정보 유효기간</th>
+			<td>
+		<input type="radio" id="personalinformation1" name="personalinformation">1년
+		<input type="radio" id="personalinformation3" name="personalinformation">3년
+		<input type="radio" id="personalinformation5" name="personalinformation">5년
+		<input type="radio" id="persoanlinformation10" name="personalinformation">10년
+
+			</td>
+		</tr>
+				
+	
 	</table>
 	<br><hr>
 	
