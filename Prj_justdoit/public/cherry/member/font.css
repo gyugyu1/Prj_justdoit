@@ -1,0 +1,10 @@
+@font-face {
+    font-family:"nanum";
+    src: url("./NanumGothic-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: 'SMJ';
+    src: url("./SMJ.ttf") format("truetype");
+}
