@@ -81,9 +81,12 @@
 						<button class="btn btn-outline-secondary" type="button"
 							id="button-addon1" data-bs-toggle="modal"
 							data-bs-target="#exampleModal">주소 찾기</button>
+						<input type="text" aria-label="First name" class="form-control">
+						<input type="text" aria-label="Last name" class="form-control"
+							placeholder="상세 주소">
 
 						<!--MODAL -->
-						<div class="modal fade" id="exampleModal" tabindex="-1"
+												<div class="modal fade" id="exampleModal" tabindex="-1"
 							aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
@@ -94,32 +97,30 @@
 									</div>
 									<div class="modal-body">
 										<h3 style="text-align: center">주소 검색</h3>
-										<br> <br> <div class="input-group mb-3"><input
+										<br> <br><div class="input-group mb-3"> <input
 											class="form-control form-control-lg" type="text"
-											placeholder="주소 입력">
-										<button class="btn btn-outline-secondary" type="button"
-											id="button-addon2">검색</button>
-										<br>
-										<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
-										<p>예) 건물명 : 방배동 우성아파트</p>
-										<p>도로명 : 테헤란로 152</p>
-										<p>지역번 : 역삼동 737</p>
+											placeholder="주소 입력"> <br>
+										<a href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button"
+											id="button-addon2">검색</a>
 									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary"
-											data-bs-dismiss="modal">닫기</button>
-										<button type="button" class="btn btn-primary">확인</button>
-									</div>
+									<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+									<p>예) 건물명 : 방배동 우성아파트</p>
+									<p>도로명 : 테헤란로 152</p>
+									<p>지역번 : 역삼동 737</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">닫기</button>
+									<button type="button" class="btn btn-primary">확인</button>
 								</div>
 							</div>
 						</div>
-						<!-- MODAL END -->
+					</div>
+							<!-- MODAL END -->
 
 
-						<input type="text" aria-label="First name" class="form-control">
-						<input type="text" aria-label="Last name" class="form-control"
-							placeholder="상세 주소">
-					</div></th>
+
+						</div></th>
 			</tr>
 
 
