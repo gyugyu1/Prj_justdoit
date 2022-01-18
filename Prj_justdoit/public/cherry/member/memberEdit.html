@@ -14,14 +14,69 @@
 <body>
 <body
 	style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../icon.png); background-size: contain;">
-	<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-			<li class="breadcrumb-item"><a href="../../index.html">INDEX</a></li>
-			<li class="breadcrumb-item" aria-current="page"><a
-				href="./memberlist.html">회원목록</a></li>
-			<li class="breadcrumb-item active" aria-current="page">정보수정</li>
-		</ol>
+	<!-- 네비게이션바 시작  -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./memberlist.html"> <img
+				src="./nike.png" width="110" height="40"
+				class="d-inline-block text-align-left"></a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link" aria-current="page"
+						href="./memberlist.html">회원리스트</a></li>
+					<li class="nav-item"><a class="nav-link"
+						aria-current="page" href="./memberview.html">회원보기</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./memberedit.html">회원정보 수정</a></li>
+				</ul>
+
+				<!--로그인 버튼  -->
+				<div class="dropdown">
+					<button class="btn btn-lightblack dropdown-toggle btn-sm"
+						type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">로그인</button>
+					<!--로그인 버튼 끝 -->
+
+					<div class="dropdown-menu">
+						<form class="px-4 py-3">
+							<div class="mb-3">
+								<label for="exampleDropdownFormEmail1" class="form-label">이메일
+									주소</label> <input type="email" class="form-control"
+									id="exampleDropdownFormEmail1" placeholder="email@example.com">
+							</div>
+							<div class="mb-3">
+								<label for="exampleDropdownFormPassword1" class="form-label">비밀번호</label>
+								<input type="password" class="form-control"
+									id="exampleDropdownFormPassword1" placeholder="Password">
+							</div>
+							<div class="mb-3">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input"
+										id="dropdownCheck"> <label class="form-check-label"
+										for="dropdownCheck"> 기억하기 </label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">로그인</button>
+						</form>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">처음이신가요? 회원가입</a> <a
+							class="dropdown-item" href="#">비밀번호를 잊으셨나요?</a>
+					</div>
+
+					<!--로그인 내용 끝  -->
+				</div>
+
+			</div>
+
+
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="검색">
+				<button class="btn btn-outline-black" type="submit"
+					style="width: 100px">검색</button>
+			</form>
+		</div>
 	</nav>
+	<!-- 네비게이션바 시작  -->
 
 
 	<table class="table table-hover" style="width: 1000px">
@@ -89,28 +144,32 @@
 									</div>
 									<div class="modal-body">
 										<h3 style="text-align: center">주소 검색</h3>
-										<br> <br><div class="input-group mb-3"> <input
-											class="form-control form-control-lg" type="text"
-											placeholder="주소 입력"> <br>
-										<a href="https://map.naver.com/v5" class="btn btn-outline-secondary" role="button"
-											id="button-addon2">검색</a>
+										<br> <br>
+										<div class="input-group mb-3">
+											<input class="form-control form-control-lg" type="text"
+												placeholder="주소 입력"> <br> <a
+												href="https://map.naver.com/v5"
+												class="btn btn-outline-secondary" role="button"
+												id="button-addon2">검색</a>
+										</div>
+										<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
+										<p>예) 건물명 : 방배동 우성아파트</p>
+										<p>도로명 : 테헤란로 152</p>
+										<p>지역번 : 역삼동 737</p>
 									</div>
-									<p>도로명, 건물명 또는 지번 중 편한 방법으로 검색하세요.</p>
-									<p>예) 건물명 : 방배동 우성아파트</p>
-									<p>도로명 : 테헤란로 152</p>
-									<p>지역번 : 역삼동 737</p>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary"
-										data-bs-dismiss="modal">닫기</button>
-									<button type="button" class="btn btn-primary">확인</button>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">닫기</button>
+										<button type="button" class="btn btn-primary">확인</button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div> <!-- MODAL END --> <input type="text" aria-label="First name"
-					class="form-control" value="서울시 마포구 노고산동"> <input
-					type="text" aria-label="Last name" class="form-control"
-					value="자바 아파트 202호" placeholder="상세 주소">
+						<!-- MODAL END -->
+						<input type="text" aria-label="First name" class="form-control"
+							value="서울시 마포구 노고산동"> <input type="text"
+							aria-label="Last name" class="form-control" value="자바 아파트 202호"
+							placeholder="상세 주소">
 					</div></th>
 			</tr>
 			<tr>
@@ -441,7 +500,6 @@
 					</div></th>
 			</tr>
 
-		</tbody>
 
 
 		<table class="table table-hover" style="width: 1000px">
