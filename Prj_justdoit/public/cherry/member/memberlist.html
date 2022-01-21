@@ -59,12 +59,11 @@ div {
 }
 </style>
 <body
-	style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../icon.png); background-size: contain;">
+	style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(./nike4.png); background-size: contain;">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="./memberlist.html"> <img
-				src="./nike.png" width="110" height="40"
-				class="d-inline-block text-align-left"></a>
+				src="./nike2.png" class="d-inline-block text-align-left"></a>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item"><a class="nav-link active"
@@ -77,11 +76,12 @@ div {
 						type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
 						aria-expanded="false">로그인</button>
 					<!--로그인 버튼 끝 -->
-				
-					<div class="dropdown-menu">
+
+					<div class="dropdown-menu" style="width:300px">
 						<form class="px-4 py-3">
 							<div class="mb-3">
-								<label for="exampleDropdownFormEmail1" class="form-label">이메일 주소</label> <input type="email" class="form-control"
+								<label for="exampleDropdownFormEmail1" class="form-label">이메일
+									주소</label> <input type="email" class="form-control"
 									id="exampleDropdownFormEmail1" placeholder="email@example.com">
 							</div>
 							<div class="mb-3">
@@ -102,7 +102,7 @@ div {
 						<a class="dropdown-item" href="#">처음이신가요? 회원가입</a> <a
 							class="dropdown-item" href="#">비밀번호를 잊으셨나요?</a>
 					</div>
-					
+
 					<!--로그인 내용 끝  -->
 				</div>
 
@@ -119,12 +119,13 @@ div {
 
 
 	<h5 class="display-5" style="text-align: center">회원목록</h5>
-	<table class="table" style="width: 500px;">
+	<table class="table" style="width: 600px;">
 		<tr>
 			<th class="table-dark">이름</th>
 			<th class="table-dark">성별</th>
 			<th class="table-dark">아이디</th>
 			<th class="table-dark">국적</th>
+			<th class="table-dark"></th>
 		</tr>
 
 		<tr>
@@ -132,6 +133,82 @@ div {
 			<td>남자</td>
 			<td>lwd33021</td>
 			<td>한국</td>
+			<td>
+				<!-- 간략히 버튼  -->
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">간략히</button>
+					<!--간략히 컨텐츠 시작  -->
+					<div class="dropdown-menu" style="width: 500px">
+						<div class="card mb-3" style="max-width: 540px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img src="./dicaf.jpg" class="img-fluid rounded-start"
+										alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">이름</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="박규원" disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">전화</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="01024206561"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">주소</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="서울시 마포구 노고산동"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">직업</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="웹 디자이너"
+													disabled>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;">
+							<a class="btn btn-primary" href="./memberview.html" role="button">자세히</a> 
+								<a class="btn btn-primary" href="./memberEdit.html"
+								role="button">정보 수정</a>
+						</div>
+					</div>
+				</div> <!-- 간략히 컨텐츠 끝 --> <!--간랸히 버튼 끝  -->
+			</td>
 		</tr>
 
 		<tr>
@@ -139,24 +216,328 @@ div {
 			<td>여자</td>
 			<td>l223</td>
 			<td>한국</td>
+			<td>
+				<!-- 간략히 버튼  -->
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">간략히</button>
+					<!--간략히 컨텐츠 시작  -->
+					<div class="dropdown-menu" style="width: 500px">
+						<div class="card mb-3" style="max-width: 540px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img src="./dicaf.jpg" class="img-fluid rounded-start"
+										alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">이름</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="박규원" disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">전화</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="01024206561"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">주소</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="서울시 마포구 노고산동"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">직업</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="웹 디자이너"
+													disabled>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;">
+						<a class="btn btn-primary" href="./memberview.html" role="button">자세히</a>
+							<a class="btn btn-primary" href="./memberEdit.html" role="button">정보
+								수정</a>
+						</div>
+					</div>
+				</div> <!-- 간략히 컨텐츠 끝 --> <!--간랸히 버튼 끝  -->
+			</td>
 		</tr>
 		<tr>
 			<td><a href="./memberview.html">리사</a></td>
 			<td>여자</td>
 			<td>lwd</td>
 			<td>태국</td>
+			<td>
+				<!-- 간략히 버튼  -->
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">간략히</button>
+					<!--간략히 컨텐츠 시작  -->
+					<div class="dropdown-menu" style="width: 500px">
+						<div class="card mb-3" style="max-width: 540px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img src="./dicaf.jpg" class="img-fluid rounded-start"
+										alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">이름</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="박규원" disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">전화</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="01024206561"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">주소</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="서울시 마포구 노고산동"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">직업</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="웹 디자이너"
+													disabled>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;">
+						<a class="btn btn-primary" href="./memberview.html" role="button">자세히</a>
+							<a class="btn btn-primary" href="./memberEdit.html" role="button">정보
+								수정</a>
+						</div>
+					</div>
+				</div> <!-- 간략히 컨텐츠 끝 --> <!--간랸히 버튼 끝  -->
+			</td>
 		</tr>
 		<tr>
 			<td><a href="./memberview.html">로제</a></td>
 			<td>여자</td>
 			<td>l3021</td>
 			<td>한국</td>
+			<td>
+				<!-- 간략히 버튼  -->
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">간략히</button>
+					<!--간략히 컨텐츠 시작  -->
+					<div class="dropdown-menu" style="width: 500px">
+						<div class="card mb-3" style="max-width: 540px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img src="./dicaf.jpg" class="img-fluid rounded-start"
+										alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">이름</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="박규원" disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">전화</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="01024206561"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">주소</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="서울시 마포구 노고산동"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">직업</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="웹 디자이너"
+													disabled>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;">
+						<a class="btn btn-primary" href="./memberview.html" role="button">자세히</a>
+							<a class="btn btn-primary" href="./memberEdit.html" role="button">정보
+								수정</a>
+						</div>
+					</div>
+				</div> <!-- 간략히 컨텐츠 끝 --> <!--간랸히 버튼 끝  -->
+			</td>
 		</tr>
 		<tr>
 			<td><a href="./memberview.html">디카프리오</a></td>
 			<td>남자</td>
 			<td>dikaf331</td>
 			<td>미국</td>
+			<td>
+				<!-- 간략히 버튼  -->
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">간략히</button>
+					<!--간략히 컨텐츠 시작  -->
+					<div class="dropdown-menu" style="width: 500px">
+						<div class="card mb-3" style="max-width: 540px;">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img src="./dicaf.jpg" class="img-fluid rounded-start"
+										alt="...">
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">이름</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="박규원" disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">전화</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="01024206561"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">주소</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="서울시 마포구 노고산동"
+													disabled>
+											</div>
+										</div>
+
+										<div class="row g-3 align-items-center"
+											style="margin-bottom: 15px;">
+											<div class="col-auto">
+												<label for="inputPassword6" class="col-form-label">직업</label>
+											</div>
+											<div class="col-auto">
+												<input type="text" id="inputPassword6" class="form-control"
+													aria-describedby="passwordHelpInline" value="웹 디자이너"
+													disabled>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="text-align: center;">
+						<a class="btn btn-primary" href="./memberview.html" role="button">자세히</a>
+							<a class="btn btn-primary" href="./memberEdit.html" role="button">정보
+								수정</a>
+						</div>
+					</div>
+				</div> <!-- 간략히 컨텐츠 끝 --> <!--간랸히 버튼 끝  -->
+			</td>
 		</tr>
 	</table>
 
