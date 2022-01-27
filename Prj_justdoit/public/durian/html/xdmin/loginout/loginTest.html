@@ -23,44 +23,58 @@
 	border-radius: 100%;
 	overflow: hidden;
 }
+@font-face {
+	font-family: 'SMJ';
+	src: url("./SMJ.ttf") format("truetype");
+}
 </style>
 </head>
 <body
-	style="background-image: url(./colorneon.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat;">
-	<div style="text-align: right;">
-		<button type="button" class="btn">sign in</button>
-		<button type="button" class="btn ">sign up</button>
-	</div>
-	<div class="container">
-		<div class="row justify-content-md-center">
-			<div class="col-md-auto">
-				<h1>login page</h1>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- 로그인 카드 시작 -->
-	<br>
-	<div class="container-fluid">
-		<div class="card mx-auto" style="max-width: 700px;">
+	style="background-image: url(../images/mad.jpg); background-position: center center; background-size: cover; background-repeat:no-repeat; height: 100vh">
+	<div class="container-fluid mt-5">
+	<!-- 로그인 card 시작 -->
+		<div class="card mx-auto" style="max-width: 500px;">
+		
 			<div class="row g-0">
-				<div class="col-md-6">
-					<img src="./projectpic.jpg" class="img-fluid rounded-start"
-						alt="...">
+				<div class="col-lg-6"  >
+					<div class="card bg-primary text-white">
+					<img src="../images/moon.png" class="card-img img-fluid" style="height:498.4px">
+					<div class="card-img-overlay">
+					<h2 class="card-title">LOG IN PAGE</h2>
+					<p class="card-text">this is durian project</p>
+					
+					
+					</div>
+					</div>
 				</div>
-				<div class="col-md-6">
-					<div class="card-body">
+					<!--  -->
+					
+					<!--  -->
+					<!-- 로그인 card 끝 -->
+				<div class="col-sm-6">
+					<div class="card bg-light">
+					<div class="card-body p-3">
 						<h1 class="text-muted text-center">sign in with:</h1>
-						<div class="text-center"><span class="col-md-4" style="margin-right:40px">
-							<a href="#"><img src="./kakao.png" class="icon rounded"></a>
+						<div class="text-center">
+					<!--카카오 시작  -->
+						<span class="col-3">
+							<a href="#"><img src="../images/kakao.png" class="icon" id="kakao"></a>
 						</span>
-						<span class="col-md-4 ">
-							<a href="#"><img src="./facebook.png" class="icon rounded"></a>
+					
+						<!--카카오 끝  -->
+						
+						<span class="col-3 ">
+							<a href="#"><img src="../images/facebook.png" class="icon" id="facebook"></a>
 						</span>
-						<span class="col-md-4" style="margin-left:40px">
-							<a href="#"><img src="./google.png" class="icon rounded"></a>
-						</span></div>
+						<span class="col-3">
+							<a href="#"><img src="../images/apple.png" class="icon" id="apple4"></a>
+						</span>
+						<span class="col-3">
+							<a href="#"><img src="../images/twitter.png" class="icon" id="twitter"></a>
+						</span>
+						<span class="col-3">
+							<a href="#"><img src="../images/google.png" class="icon" id="google"></a>
+						</span>	</div>
 						<h2 class="text-muted text-center mt-4 mb-3">OR</h2>
 
 						<div>
@@ -80,13 +94,14 @@
 						</div>
 						<button type="button" class="btn btn-primary btn col-12">sign
 							in</button>
+							
 						<a class="dropdown-item" href="#">처음이신가요? 회원가입</a> <a
 							class="dropdown-item" href="#">비밀번호나 아이디를 잊으셨나요? 찾기</a>
 					</div>
 				</div>
 			</div>
 		</div>
-
+</div>
 
 
 	</div>
