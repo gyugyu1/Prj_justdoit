@@ -7,26 +7,17 @@
 	rel="stylesheet">
 <title>login page</title>
 <style>
-select {
-	border: 3px solid black;
-	width: 90px;
-	border-radius: 20px;
-}
-
-.form-control {
-	border: 1px solid black;
-	border-radius: 20px;
-}
-
-.form-select {
-	border:1px solid black;
-	border-radius:20px;
+.form-select, .form-control {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid black;
+	border-radius: 0px;
 }
 
 .btn {
-	border-radius:10rem;
+	border-radius: 3px;
 }
-
 
 .form-check-input {
 	margin-left: 10px;
@@ -49,163 +40,261 @@ table {
 	border: solid 3px black;
 }
 
-.tr {
-	padding: 3px;
+hr {
+	border: solid 1px black;
 }
 
-.th {
-	width: 20px;
+.container-md {
+	border: 1px solid black;
+	border-radius: 10px;
+	-webkit-box-shadow: 15px 16px 4px -7px rgba(0, 0, 0, 0.49);
+	-moz-box-shadow: 15px 16px 4px -7px rgba(0, 0, 0, 0.49);
+	box-shadow: 15px 16px 4px -7px rgba(0, 0, 0, 0.49);
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+	.container-md {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width:1025px) {
+	.container-md {
+		width: 30%;
+	}
+}
+
+nav>div>ul>li>a:link {
+	color: white;
+	text-decoration: none;
+}
+
+nav>div>ul>li>a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+nav>div>ul>li>a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+nav>div>ul>li>a:active {
+	color: white;
+	text-decoration: none;
 }
 </style>
 </head>
 <body>
-	<div class="container justify-content-center">
+
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="d-inline-flex"
+				style="justify-content: left; align-items: center;">
+				<a class="navbar-brand" href="#"> <img src="../images/G.png"
+					width="60" class="d-inline-block align-text-top">
+				</a>
+				<h3>GYU-MARKET</h3>
+			</div>
+			
+			<a class="nav-link" href="#">로그아웃</a>
+			
+			<div class="d-inline-flex flex-row-reverse">
+				<a href="#">관리자<img src="../images/human.png" class="icon" width="60"></a>
+				
+			</div>
+
+		</div>
+	</nav>
+	<nav class="mb-2">
+		<div class="container" style="background-color: #000057">
+			<ul class="nav justify-content-center">
+				<li class="navbar-item"><a class="nav-link" href="#">홈</a></li>
+				<li class="navbar-item"><a class="nav-link" href="#">회원관리</a></li>
+				<li class="navbar-item"><a class="nav-link" href="#">사이트관리</a></li>
+				<li class="navbar-item"><a class="nav-link" href="#">시스템관리</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="container-md">
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<h3>정보 입력</h3>
+				<p>모두 입력하셔야 가입이 가능합니다.</p>
+			</div>
+		</div>
+		<hr>
 		<div class="row justify-content-md-center">
-			<div class="col-12 col-md-5">
-				<label for="idinput" class="form-label">아이디</label> <input
-					type="text" id="idinput" class="form-control">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="email" class="form-control" id="id" placeholder="아이디">
+					<label for="id">아이디를 입력해주세요.</label>
+				</div>
 				<div class="form-text">5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용
 					가능합니다.</div>
 			</div>
-			<div class="col-10 col-md-5"></div>
 		</div>
-
+		<div class="row justify-content-md-center">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="password" class="form-control" id="password"
+						placeholder="비밀번호확인"> <label for="password">비밀번호를
+						입력해주세요.</label>
+				</div>
+			</div>
+		</div>
+		<div class=" row justify-content-md-center">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="password" id="password2" class="form-control"
+						placeholder="비밀번호"> <label for="password2">비밀번호 확인</label>
+				</div>
+				<div class="form-text" style="text-align: center;">8~16자 영문
+					대소문자, 숫자, 특수문자를 사용해주세요.</div>
+			</div>
+		</div>
 
 		<div class="row justify-content-md-center">
-			<div class="col-6 col-md-5">
-				<label for="passwordinput" class="form-label">비밀번호</label> <input
-					type="password" id="passwordinput" class="form-control">
-
-
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="text" id="name" class="form-control" placeholder="이름">
+					<label for="name"> 이름</label>
+				</div>
 			</div>
-			<div class="col-6 col-md-5">
-				<label for="passwordinput2" class="form-label">비밀번호 확인</label> <input
-					type="password" id="passwordinput2" class="form-control">
-
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="date" class="form-control" id="birthdate"> <label
+						for="birthdate">생일</label>
+				</div>
 			</div>
-			<div class="form-text" style="text-align: center;">8~16자 영문 대
-				소문자, 숫자, 특수문자를 사용해주세요.</div>
 		</div>
 
 		<div class="row justify-content-md-center">
-			<div class="col-12 col-md-5">
-				<label for="name" class="form-label">이름</label> <input type="text"
-					id="name" class="form-control">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<select class="form-select" id="gender">
+						<option selected>남성</option>
+						<option>여성</option>
+						<option>기타</option>
+					</select> <label for="gender">성별</label>
+				</div>
 			</div>
+		</div>
 
 
-			<div class="col-8 col-md-4">
-				<label for="birthdate" class="form-label">생일</label> <input
-					type="date" class="form-control" id="birthdate">
-
+		<div class="row justify-content-center">
+			<div class="col-9">
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder="주소검색">
+					<label for="address">주소검색</label>
+				</div>
 			</div>
+			<div class="col-3">
+				<button class="btn" type="button" style="margin-top: 8px;">검색</button>
+			</div>
+		</div>
 
-			<div class="col-4 col-md-1">
-				<label for="gender" class="form-lable" style="margin-bottom: 10px;">성별</label>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button"
-						id="gender" data-bs-toggle="dropdown">성별</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">남성</a></li>
-						<li><a class="dropdown-item" href="#">여성</a></li>
-						<li><a class="dropdown-item" href="#">선택안함</a></li>
-					</ul>
+
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" id="address"
+						placeholder="상세주소입력"> <label for="address">상세주소입력</label>
 				</div>
 			</div>
 		</div>
 		<div class="row justify-content-center">
-			<div class="col-5">
-				<label for="address" class="form-label">주소검색</label>
-				<div class="input-group">
-					<input type="text" class="form-control">
-					<button class="btn btn-outline-secondary" type="button">검색</button>
+			<div class="col-12">
+				<div class="form-floating mb-3">
+					<input type="tel" class="form-control" id="contact"
+						placeholder="연락"> <label for="contact">연락처</label>
 				</div>
 			</div>
-			<div class="col-5 align-self-end">
-				<label class="form-label">전화번호</label>
-				
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<div class="form-floating mb-3">
+
+					<input type="text" class="form-control" id="recomender"
+						placeholder="추천인"> <label for="recomender">추천인</label>
+				</div>
+
+
 			</div>
-
-
 		</div>
 
-		<div class="row justify-content-center">
+	</div>
 
-			<div class="col-5">
-				<input type="text" class="form-control" id="address" value="상세주소 입력">
-			</div>
+	<br>
+	<div class="container-md">
+		<h3>두리안 서비스 약관</h3>
+		<p>서비스의 약관에 대해 동의해주세요!</p>
 
-			<div class="col-5">
-				<div class="input-group">
-					<input type="text" class="form-control">
-					<div class="dropdown">
-						<button class="btn dropdown-toggle" type="button"
-							data-bs-toggle="dropdown" id="carrier">통신사 선택</button>
-						<ul class="dropdown-menu">
-							<li class="dropdown-item">KT</li>
-							<li class="dropdown-item">SKT</li>
-							<li class="dropdown-item">LG</li>
-							<li class="dropdown-item">알뜰폰</li>
-						</ul>
+		<input type="checkbox" class="form-check-input" id="mobileCheck">
+		<label class="form-check-label" for="mobileCheck">[선택]모바일 마케팅
+			정보 수신 동의</label>
+
+
+		<button class="btn btn-sm btn-outline-secondary" type="button"
+			data-bs-toggle="modal" data-bs-target="#mobile">약관보기</button>
+
+		<div class="modal fade" id="mobile" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">모바일 마케팅 정보 수신 약관</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-6 col-md-3">
-			<label class="form-check-label" for="agreement">모바일 마케팅 수신 동의</label>
-				<div class="form-check">
-				<input class="form-check-input" type="radio" name="agreement" id="agreement">
-				<label class="form-check-label" for="agreement">동의</label>
-				</div>
-				<div class="form-check">
-				<input class="form-check-input" type="radio" name =" disagreement" id="disagreement">
-				<label class="form-check-label" for="disagreement">미동의</label>
-				</div>
-			</div>
-			
-			<div class="col-6 col-md-3">
-				<label for="recomender" class="form-label">추천인</label>
-				<input type="text" class="form-control" id="recomender">
-			</div>
-			
-			<div class="col-6 col-md-2">
-				<label for="profession" class="form-label">직업</label>
-				<input type="text" class="form-control" id="profession">
-			</div>
-			
-			<div class="col-6 col-md-2">
-				<label for="nationality" class="form-label">국적</label>
-				<select class="form-select" id="nationality">
-					<option selected>국적 선택</option>
-					<option>한국</option>
-					<option>미국</option>
-					<option>일본</option>
-					<option>중국</option>
-					<option>대만</option>
-					<option>영국</option>
-					<option>스페인</option>
-				</select>
-				
-			</div>
-		</div>
-		
-		<div class="row justify-content-center">
-			<div class="col-10 col-md-5">
-				<label class="form-label" for="sns">SNS주소</label>
-				<div class="input-group">
-					
-				
-					<div class="dropdown">
-						<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">SNS선택</button>
-							<ul class="dropdown-menu">
-								<li class="dropdown-item">인스타그램</li>
-								<li class="dropdown-item">페이스북</li>
-								<li class="dropdown-item">트위터</li>
-							</ul>
+					<div class="modal-body">
+						<p>쿠팡은 회원님이 수집 및 이용에 동의한 개인정보를 이용하여 SMS, MMS, 이메일,푸시 알림 등 다양한
+							전자적 전송 매체를 통해 오전 8시부터 오후 9시까지 개인 맞춤형 광고 및 정보를 전송할 수 있습니다. 본 동의는
+							거부하실 수 있으나, 거부 시 이벤트 및 프로모션 안내를 받아보실 수 없습니다. 광고성정보수신의 변경은 1) 쿠팡
+							고객센터(1577-7011, help@coupang.com)로 요청하거나 2) SMS, MMS, 이메일: 웹
+							브라우저에서 쿠팡에 로그인> 마이쿠팡> MY 정보(개인정보확인/수정)> 수신설정] 3) 푸시알림: 쿠팡 앱 로그인>
+							마이쿠팡> 이름 선택(내정보관리) > 푸시 설정에서 언제든지 변경할 수 있습니다.</p>
 					</div>
-					
-					<input type="text" class="form-control">
+					<div class="modal-footer">
+						<button class="btn btn-outline-secondary" type="button"
+							data-bs-dismiss="modal">확인</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div>
+			<input type="checkbox" class="form-check-input" id="mobileCheck">
+			<label class="form-check-label" for="mobileCheck">[선택]개인정보
+				이용약관 동의</label>
+
+			<button class="btn btn-outline-secondary btn-sm"
+				data-bs-toggle="modal" data-bs-target="#personalinfo">약관보기</button>
+
+			<div class="modal fade" id="personalinfo" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">개인정보 수집 이용 동의 약관</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal">
+							</button>
+						</div>
+						<div class="modal-body">
+							<p>쿠팡은 회원님이 수집 및 이용에 동의한 개인정보를 이용하여 SMS, MMS, 이메일,푸시 알림 등 다양한
+								전자적 전송 매체를 통해 오전 8시부터 오후 9시까지 개인 맞춤형 광고 및 정보를 전송할 수 있습니다. 본 동의는
+								거부하실 수 있으나, 거부 시 이벤트 및 프로모션 안내를 받아보실 수 없습니다. 광고성정보수신의 변경은 1) 쿠팡
+								고객센터(1577-7011, help@coupang.com)로 요청하거나 2) SMS, MMS, 이메일: 웹
+								브라우저에서 쿠팡에 로그인> 마이쿠팡> MY 정보(개인정보확인/수정)> 수신설정] 3) 푸시알림: 쿠팡 앱 로그인>
+								마이쿠팡> 이름 선택(내정보관리) > 푸시 설정에서 언제든지 변경할 수 있습니다.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-outline-secondary"
+								data-bs-dismiss="modal">확인</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -213,7 +302,7 @@ table {
 
 
 
-<!-- 모바일 마케팅 동의유무 부터 시작하면됨 -->
+	<!-- 모바일 마케팅 동의유무 부터 시작하면됨 -->
 
 
 	<script
