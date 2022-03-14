@@ -45,10 +45,11 @@ tr {
 
 th {
 	width: 20px;
-	padding:3px;
+	padding: 3px;
 }
+
 td {
-	padding:3px;
+	padding: 3px;
 }
 
 .icon {
@@ -57,36 +58,41 @@ td {
 	border-radius: 100%;
 	overflow: hidden;
 }
+
 nav>div>ul>li>a:link {
-  color : white;
-  text-decoration: none;
-}
-nav>div>ul>li>a:visited {
-  color : white;
-  text-decoration: none;
-}
-nav>div>ul>li>a:hover {
-  color : white;
-  text-decoration: underline;
-}
-nav>div>ul>li>a:active {
-  color : white;
-  text-decoration: none;
-}
-p {
-	color:black;
-}
-a {
-	color:#000056;
+	color: white;
+	text-decoration: none;
 }
 
+nav>div>ul>li>a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+nav>div>ul>li>a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+nav>div>ul>li>a:active {
+	color: white;
+	text-decoration: none;
+}
+
+p {
+	color: black;
+}
+
+a {
+	color: #000056;
+}
 </style>
 </head>
 <body>
-		
-		
-			
-				<nav class="navbar navbar-expand-lg">
+
+
+
+	<nav class="navbar navbar-expand-lg">
 		<div class="container">
 			<div class="col-7">
 				<div class="d-inline-flex"
@@ -100,44 +106,51 @@ a {
 
 
 			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#admin">
-				<img src="../images/dropdown.png" width="35">
+				data-bs-toggle="offcanvas" data-bs-target="#admin">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="admin">
-				<div class="col-12 col-lg-5">
-					<div class="d-flex flex-column align-items-end">
-						<div
-							class="text-white p-1 align-items-center"
-							style="--bs-bg-opacity: .1;">
-							<a href="#"><img src="../images/human.png"
-								class="mx-auto d-block" width="60">
-								<p class="text-center mb-0">관리자</p></a>
-							<div class="d-flex">
-								<a class="nav-link p-1" href="#">로그아웃</a>
-								<p class="text-black">|</p>
-								<a class="nav-link p-1" href="#">계정관리</a>
+			<div class="offcanvas navbar-offcanvas" id="admin">
+					<div class="offcanvas offcanvas-start" tabindex="-1"
+						id="admin" aria-labelledby="offcanvasExampleLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+							<button type="button" class="btn-close text-reset"
+								data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<div>Some text as placeholder. In real life you can have
+								the elements you have chosen. Like, text, images, lists, etc.</div>
+							<div class="dropdown mt-3">
+								<button class="btn btn-secondary dropdown-toggle" type="button"
+									id="dropdownMenuButton" data-bs-toggle="dropdown">
+									Dropdown button</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+									<li><a class="dropdown-item" href="#">Action</a></li>
+									<li><a class="dropdown-item" href="#">Another action</a></li>
+									<li><a class="dropdown-item" href="#">Something else
+											here</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</nav>
-			
-				
-				
-				
-		
-		<nav class="mb-2 ">
-			<div class="container" style="background-color:#000057" >
-			<ul class="nav justify-content-center" >
+
+
+
+
+
+	<nav class="mb-2 ">
+		<div class="container" style="background-color: #000057">
+			<ul class="nav justify-content-center">
 				<li class="navbar-item"><a class="nav-link" href="#">홈</a></li>
 				<li class="navbar-item"><a class="nav-link" href="#">회원정보</a></li>
 				<li class="navbar-item"><a class="nav-link" href="#">회원관리</a></li>
 				<li class="navbar-item"><a class="nav-link" href="#">로그인</a></li>
 			</ul>
-			</div>
-		</nav>
+		</div>
+	</nav>
 
 
 	<form>
@@ -165,8 +178,9 @@ a {
 								<div class="table-responsive">
 									<table class="table">
 										<tr>
-											<th style="width: 150px;"class="table-active">등록기간</th>
-											<td colspan="3"><div style="display: flex; align-items: center;">
+											<th style="width: 150px;" class="table-active">등록기간</th>
+											<td colspan="3"><div
+													style="display: flex; align-items: center;">
 													<input type="date" class="form-control"
 														style="width: 150px">
 													<p>에서</p>
@@ -303,63 +317,63 @@ a {
 		</div>
 	</form>
 
-<div class="container">
-	<div class="col justify-content-center;">
-		<table class="table">
-			<thead>
-				<tr>
-					<th scope="col" style="width:1%">#</th>
-					<th scope="col" style="width:1%"></th>
-					<th scope="col">이름</th>
-					<th scope="col">나이</th>
-					<th scope="col">성별</th>
-					<th scope="col">마케팅</th>
-					<th scope="col">개인정보</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">1</th>
-					<td style="width: 10px"><div class="form-check">
-							<input class="form-check-input" type="checkbox" value=""
-								id="flexCheckDefault">
-						</div></td>
-					<td>박규원</td>
-					<td>27</td>
-					<td>남</td>
-					
-					<td>예</td>
-					<td>3년</td>
-				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td style="width: 10px"><div class="form-check">
-							<input class="form-check-input" type="checkbox" value=""
-								id="flexCheckDefault">
-						</div></td>
-					<td>원빈</td>
-					<td>40</td>
-					<td>남</td>
-					
-					<td>예</td>
-					<td>3년</td>
-				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td style="width: 10px"><div class="form-check">
-							<input class="form-check-input" type="checkbox" value=""
-								id="flexCheckDefault">
-						</div></td>
-					<td>지수</td>
-					<td>25</td>
-					<td>남</td>
-					
-					<td>예</td>
-					<td>3년</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
+	<div class="container">
+		<div class="col justify-content-center;">
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col" style="width: 1%">#</th>
+						<th scope="col" style="width: 1%"></th>
+						<th scope="col">이름</th>
+						<th scope="col">나이</th>
+						<th scope="col">성별</th>
+						<th scope="col">마케팅</th>
+						<th scope="col">개인정보</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td style="width: 10px"><div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="flexCheckDefault">
+							</div></td>
+						<td>박규원</td>
+						<td>27</td>
+						<td>남</td>
+
+						<td>예</td>
+						<td>3년</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td style="width: 10px"><div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="flexCheckDefault">
+							</div></td>
+						<td>원빈</td>
+						<td>40</td>
+						<td>남</td>
+
+						<td>예</td>
+						<td>3년</td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td style="width: 10px"><div class="form-check">
+								<input class="form-check-input" type="checkbox" value=""
+									id="flexCheckDefault">
+							</div></td>
+						<td>지수</td>
+						<td>25</td>
+						<td>남</td>
+
+						<td>예</td>
+						<td>3년</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 	<hr>
 
@@ -373,7 +387,7 @@ a {
 		</ul>
 	</nav>
 	<div style="text-align: center;">
-		<a class="btn btn-dark" href="#" role="button" >선택삭제</a> <a
+		<a class="btn btn-dark" href="#" role="button">선택삭제</a> <a
 			class="btn btn-danger" href="#" role="button">전체삭제</a>
 	</div>
 
